@@ -1,2 +1,2 @@
 max = 10
-alert(Math.random())
+alert(Math.random()*max)
