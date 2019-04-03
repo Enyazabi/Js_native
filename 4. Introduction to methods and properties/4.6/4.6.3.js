@@ -14,7 +14,7 @@ function findMaxSalary(obj) {
             maxSalary = obj[key]
             employeeName = key
         }
+    }
         return employeeName
     }
     alert(findMaxSalary(salaries))
-}
