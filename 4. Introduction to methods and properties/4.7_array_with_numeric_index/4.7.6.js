@@ -1,12 +1,13 @@
 var animalSounds = ['meow','woof','moo','quack']
+var index = findValue(animalSounds, 3)
 function findValue (animalSounds, value) {
     for(var i=0; i<animalSounds.length; i++) {
-        (animalSounds[i]===value) ? alert(i) : alert(-1)
+       if (animalSounds[i]===value) return i
     }
-}
+       return -1
+    }
 
-
-findValue(animalSounds,'quack')
+alert(index)
 
 
 
