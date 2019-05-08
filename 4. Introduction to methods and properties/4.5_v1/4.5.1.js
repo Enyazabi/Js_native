@@ -5,7 +5,7 @@ function isEmpty(obj) {
     return true;
 }
 
-var schedule = {};
+var schedule = {}
 console.log( isEmpty(schedule) );
 
 schedule["8:30"] = "wake up";
