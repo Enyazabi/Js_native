@@ -5,7 +5,6 @@ function filterRange(numbers, min,max) {
         if (numbers[i] >= min && numbers[i] <= max) {
             result.push(numbers[i]);
         }
-
     }
 
     return result
