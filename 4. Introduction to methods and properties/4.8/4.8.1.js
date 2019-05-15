@@ -3,14 +3,10 @@ function addClass (obj, cls) {
    for (var i = 0; i < words.length; i++) {
 
    }
-    if (words.indexOf(cls)) {
-        if (words.indexOf()) {
+        if (words.indexOf(cls)===-1) {
             words.push(cls);
             obj.className = words.join('');
         }
-
-    }
-
         }
 
 var obj = {
