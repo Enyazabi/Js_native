@@ -1,7 +1,7 @@
 function camelize (str) {
-    var text = "";
+    let text = "";
 
-    for (var i = 0; i < str.length; i++) {
+    for (let i = 0; i < str.length; i++) {
         if (str.charAt (i) === "-") {
             text += str.charAt(++i).toUpperCase();
         } text += str.charAt(i);
@@ -9,4 +9,4 @@ function camelize (str) {
     return text;
 }
 
-console.log(camelize("cat-dog-pig"))
+console.log(camelize("cat-dog-pig"));
