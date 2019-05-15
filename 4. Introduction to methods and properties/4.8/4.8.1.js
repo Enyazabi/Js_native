@@ -1,14 +1,14 @@
 function addClass (obj, cls) {
    var words = obj.className;
-    if (words.indexOf(cls)) {
-        if (indexOf = false) {
-            words.push(cls);
-            obj.className = words.join('');
-        }
 
+   for (var i = 0; i < words.length; i++) {
+       if (words[i] === cls) return;
+   }
+
+        words.push(cls);
+        obj.className = words.join('');
     }
 
-        }
 
 var obj = {
     className: 'open menu'
