@@ -4,11 +4,10 @@ list.next.next = { value: 3 };
 list.next.next.next = { value: 4};
 
 function printList(list) {
-    for(let i = 0; i < list.value; i++) {
+    let temp = list;
 
-        console.log( list.value );
-        list = list.next;
-    }
+    console.log(temp.value);
+    return printList(temp.next);
 }
 
 printList(list);
