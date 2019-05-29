@@ -1,15 +1,16 @@
-function removeClass (obj, cls) {
-   var words = obj.className;
-
-   for (var i = 0; i < words.length; i++) {
-
-   }
-}
-
-var obj = {
+let obj = {
     className: 'open menu'
+};
+
+function removeClass (obj, cls) {
+    (obj.className.indexOf(cls)!==-1)
+        ?
+        obj.className = obj.className.slice(
+            obj.className.indexOf(cls) + cls.length,
+            obj.className.length)
+        :
+        obj.className
 }
 
 removeClass(obj, 'open');
-removeClass(obj, 'blyaBlyaBlya');
-
+console.log(obj.className);
