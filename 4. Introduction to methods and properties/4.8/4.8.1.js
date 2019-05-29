@@ -1,20 +1,20 @@
+var obj = {
+    className: 'open menu'
+};
+
 function addClass (obj, cls) {
    var words = obj.className;
    for (var i = 0; i < words.length; i++) {
 
    }
-        if (words.indexOf(cls)===-1) {
-            words.push(cls);
-            obj.className = words.join('');
+        if (words.indexOf(cls+' ')===-1) {
+            words= words+(' ')+(cls);
+            obj.className = words;
         }
-        }
-
-var obj = {
-    className: 'open menu'
 }
 
 addClass(obj, 'new');
 addClass(obj, 'open');
 addClass(obj, 'me');
 
-console.log( obj.className )
+console.log( obj.className );
