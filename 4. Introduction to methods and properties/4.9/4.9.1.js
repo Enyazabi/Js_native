@@ -1,6 +1,6 @@
-var arr = ["Is", "there", "life", "on", "Mars"];
+let arr = ["Is", "there", "life", "on", "Mars"];
 
-var arrLengths = arr.map(function (word) {
+let arrLengths = arr.map(function (word) {
     return word.length;
 });
 
