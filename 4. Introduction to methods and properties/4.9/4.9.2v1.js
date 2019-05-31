@@ -1,15 +1,16 @@
-var numbers = [1, 2, 3, 4, 5];
+let numbers = [1, 2, 3, 4, 5];
 
 function getSums(numbers) {
-var arrSum = [];
+let arrSum = [];
 
-arr.reduce(function (sum, current) {
+numbers.reduce(function (sum, current) {
     sum += current;
     arrSum.push(sum);
 
-}, 0);
+    return sum;
+    },0);
 
-return arrSum;
+    return arrSum;
 }
 
 console.log(getSums(numbers));
