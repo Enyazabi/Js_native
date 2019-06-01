@@ -1,6 +1,6 @@
 function f(x) {
-    return arguments.length;
 
+    return arguments.length;
 }
 
 console.log(f(undefined));
