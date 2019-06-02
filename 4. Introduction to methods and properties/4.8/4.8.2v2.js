@@ -6,6 +6,7 @@ function camelize (str) {
             text += str.charAt(++i).toUpperCase();
         } text += str.charAt(i);
     }
+
     return text;
 }
 
