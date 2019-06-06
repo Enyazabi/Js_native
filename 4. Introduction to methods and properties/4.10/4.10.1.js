@@ -1,6 +1,5 @@
 function  f(x) {
     if (arguments.length === 1){
-
         return 1;
     }
 

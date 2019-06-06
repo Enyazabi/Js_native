@@ -1,5 +1,4 @@
 function f(x) {
-
     return arguments.length;
 }
 
