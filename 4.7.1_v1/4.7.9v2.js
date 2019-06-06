@@ -9,7 +9,6 @@ for (var i = 2; i <= 100; i++) {
         }
     }
 
-
     if (array[i] === true) {
         console.log(i);
     }
