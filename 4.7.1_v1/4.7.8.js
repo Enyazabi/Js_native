@@ -11,5 +11,5 @@ function filterRange(numbers, min,max) {
 }
 
 var numbers = [6,9,8,1,2,7,3,4,5];
- var filtered = filterRange(numbers, 3, 8);
+var filtered = filterRange(numbers, 3, 8);
 console.log (filtered);
