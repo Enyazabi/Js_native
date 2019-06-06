@@ -5,7 +5,6 @@ list.next.next.next = { value: 4};
 
 function printList(list) {
     while(list) {
-
         console.log( list.value );
         list = list.next;
     }

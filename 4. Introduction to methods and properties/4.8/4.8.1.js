@@ -5,8 +5,8 @@ var obj = {
 function addClass (obj, cls) {
    var words = obj.className;
 
-        if (words.indexOf(cls+' ')===-1) {
-            words= words+(' ')+(cls);
+        if (words.indexOf(cls+' ') === -1) {
+            words = words+(' ') + (cls);
             obj.className = words;
         }
 }
