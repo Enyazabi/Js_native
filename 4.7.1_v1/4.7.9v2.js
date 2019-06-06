@@ -15,7 +15,7 @@ for (var i = 2; i <= 100; i++) {
 }
 
 var sum = 0;
-for (i=0; i < array.length; i++) {
+for (i = 0; i < array.length; i++) {
     if (array[i]) {
         sum += i;
     }
