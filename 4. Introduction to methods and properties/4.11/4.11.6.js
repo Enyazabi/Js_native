@@ -5,4 +5,4 @@ const getSecondToday = () => {
     return Math.round((now - today)/1000);
 };
 
-console.log( getSecondToday() );
+console.log(getSecondToday());

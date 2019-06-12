@@ -17,4 +17,4 @@ function getLocalDay (date) {
     }
 
 let date = new Date (2012, 0, 3);
-console.log( getLocalDay(date) );
+console.log(getLocalDay(date));

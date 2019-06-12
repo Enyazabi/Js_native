@@ -5,4 +5,4 @@ function getWeekDay(date) {
     return days[date.getDay()];
 }
 
-console.log( getWeekDay(date) );
+console.log(getWeekDay(date));
