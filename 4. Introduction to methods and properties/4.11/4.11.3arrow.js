@@ -1,4 +1,4 @@
-function getLocalDay (date) {
+const getLocalDay = date => {
 
     let obj = {
         "пн": 1,
@@ -8,13 +8,13 @@ function getLocalDay (date) {
         "пт": 5,
         "сб": 6,
         "вс": 7
-    };
+    }
 
     for (let key in obj) {
         if (obj[key] == date.getDay())
             return obj[key]
-        }
     }
+}
 
 let date = new Date (2012, 0, 3);
 console.log( getLocalDay(date) );
