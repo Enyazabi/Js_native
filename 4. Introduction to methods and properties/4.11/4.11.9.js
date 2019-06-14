@@ -2,17 +2,13 @@ function formatDate (date) {
     let diff = new Date() - date;
 
     switch (diff) {
-        case (diff < 1000):
-            return 'just';
+        case (diff < 1000): return 'just';
 
-        case  (diff < 1000 * 60):
-            return (Math.floor(diff / 1000) + 'second ago');
+        case  (diff < 1000 * 60): return (Math.floor(diff / 1000) + 'second ago');
 
-        case (diff < 1000 * 60 * 60):
-            return (Math.floor(diff / 1000 / 60) + 'minute ago');
+        case (diff < 1000 * 60 * 60): return (Math.floor(diff / 1000 / 60) + 'minute ago');
 
-        default:
-            return formatDate_(date);
+        default: return formatDate_(date);
 
 function formatDate_(date) {
     let day = date.getDate();
@@ -32,8 +28,7 @@ function formatDate_(date) {
 
     return day + '.' + month + '.' + year + ' ' + hh + ':' + mm;
 
-}
-
+        }
     }
 }
 

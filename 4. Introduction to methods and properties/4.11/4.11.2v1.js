@@ -20,7 +20,7 @@ function getWeekDay (date) {
         }
 
         key = 0;
-            while (key != dayOfWeek) {
+            while (key !== dayOfWeek) {
                 key++;
             }
         console.log(obj[key]);

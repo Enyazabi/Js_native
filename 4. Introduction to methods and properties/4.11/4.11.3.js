@@ -11,7 +11,7 @@ function getLocalDay (date) {
     };
 
     for (let key in obj) {
-        if (obj[key] == date.getDay())
+        if (obj[key] === date.getDay())
             return obj[key]
         }
     }
