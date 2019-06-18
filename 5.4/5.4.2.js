@@ -1,4 +1,4 @@
-function makeBuffer() {
+const makeBuffer = () => {
     let  string = "";
 
     return function buffer(str) {
@@ -8,7 +8,7 @@ function makeBuffer() {
         }
         string += str;
     };
-}
+};
 
 let buffer = makeBuffer();
 
@@ -21,6 +21,6 @@ console.log(buffer());
 let buffer1 = makeBuffer();
 buffer1(0);
 buffer1(1);
-buffer(0);
+buffer1(0);
 
 console.log(buffer1());
