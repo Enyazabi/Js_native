@@ -1,7 +1,7 @@
-function makeBuffer() {
+const makeBuffer = () => {
     let  string = "";
 
-    function buffer(str) {
+    function buffer (str) {
 
         if (arguments.length === 0) {
             return string;
@@ -14,7 +14,7 @@ function makeBuffer() {
     };
 
     return buffer;
-}
+};
 
 let buffer = makeBuffer();
 
