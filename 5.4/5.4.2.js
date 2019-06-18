@@ -1,10 +1,9 @@
-function makeBuffer(str) {
+function makeBuffer() {
     let  string = "";
 
-    return function buffer() {
-        console.log(str);
+    return function buffer(str) {
 
-        if (str === undefined) {
+        if (arguments.length === 0) {
             return string;
         }
         string += str;
