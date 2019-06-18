@@ -7,7 +7,7 @@ function makeBuffer() {
             return string;
         }
         string += str;
-    }
+    };
 }
 
 let buffer = makeBuffer();
