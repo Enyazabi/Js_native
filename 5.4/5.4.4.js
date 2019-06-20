@@ -12,6 +12,12 @@ let users = [{
     age: 18
 }];
 
+function byField(field) {
+    return function (a, b) {
+        return a[field] > b[field] ? 1 : -1;
+    }
+}
+
 users.sort(byField("name"));
 users.forEach(function(user) {
     console.log(user.name);
