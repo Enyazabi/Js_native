@@ -12,11 +12,11 @@ let users = [{
     age: 18
 }];
 
-function byField(field) {
-    return function (a, b) {
+const byField = (field) => {
+    return  (a, b) => {
         return a[field] > b[field] ? 1 : -1;
     }
-}
+};
 
 users.sort(byField("name"));
 users.forEach(function(user) {
