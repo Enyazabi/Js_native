@@ -9,9 +9,8 @@ const makeBuffer = () => {
         string += str;
     }
 
-    buffer.clear = function() {
+    buffer.clear = () =>
         string = "";
-    };
 
     return buffer;
 };
