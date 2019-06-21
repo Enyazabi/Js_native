@@ -16,7 +16,7 @@ function inArray(arr) {
 
     return function(item) {
 
-        return arr.indexOf(item) !== -1;
+        return ~arr.indexOf(item);
     }
 
 }

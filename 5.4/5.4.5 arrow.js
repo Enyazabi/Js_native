@@ -7,7 +7,7 @@ const inBetween = (a, b) => {
 
 const inArray = (arr) => {
 
-    return (item) => (arr.indexOf(item) !== -1)
+    return (item) => (~arr.indexOf(item))
 };
 
 let arr = [1, 2, 3, 4, 5, 6, 7];
