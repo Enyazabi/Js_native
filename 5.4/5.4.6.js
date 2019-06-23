@@ -12,7 +12,5 @@ function makeArmy() {
     return shooters;
 }
 
-let army = makeArmy();
+makeArmy();
 
-army[0];
-army[5];
