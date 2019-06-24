@@ -4,7 +4,10 @@ function makeArmy() {
     for (let i = 0; i < 10; i++) {
         let shooter = function() {
             let j = i;
-            console.log (j);
+
+            return function() {
+                console.log( j );
+            }
         };
         shooters.push(shooter());
     }
@@ -12,5 +15,6 @@ function makeArmy() {
     return shooters;
 }
 
-makeArmy();
-
+let army = makeArmy();
+army[0]();
+army[5]();

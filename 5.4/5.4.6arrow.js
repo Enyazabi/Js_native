@@ -3,8 +3,9 @@ const makeArmy = () => {
 
     for (let i = 0; i < 10; i++) {
         let shooter = () => {
-            let j = i; //what is variable j is redundant?
-            console.log (j);
+            let j = i;
+
+            return () => console.log(j);
         };
         shooters.push(shooter());
     }
@@ -12,4 +13,6 @@ const makeArmy = () => {
     return shooters;
 };
 
-makeArmy();
+let army = makeArmy();
+army[0]();
+army[5]();
