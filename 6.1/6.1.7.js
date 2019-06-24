@@ -1,7 +1,7 @@
-var calculator = {
+let calculator = {
     read: function() {
-        this.a = prompt('Enter the first value:','');
-        this.b = prompt('Enter the second value:','');
+        this.a = +prompt('Enter the first value:','');
+        this.b = +prompt('Enter the second value:','');
     },
 
     sum: function() {
@@ -13,7 +13,7 @@ var calculator = {
 
         return this.a * this.b;
     }
-}
+};
 
 calculator.read();
 alert(calculator.sum());
