@@ -3,9 +3,8 @@ const makeArmy = () => {
 
     for (let i = 0; i < 10; i++) {
         let shooter = () => {
-            let j = i;
 
-            return () => console.log(j);
+            return () => console.log(i);
         };
         shooters.push(shooter());
     }

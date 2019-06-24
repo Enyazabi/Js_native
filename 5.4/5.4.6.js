@@ -3,10 +3,9 @@ function makeArmy() {
 
     for (let i = 0; i < 10; i++) {
         let shooter = function() {
-            let j = i;
 
             return function() {
-                console.log( j );
+                console.log(i);
             }
         };
         shooters.push(shooter());
